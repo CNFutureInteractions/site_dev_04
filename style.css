@@ -237,55 +237,9 @@ img {
 /* ticker css */
 
 
- 
-  
-  *, *::before, *::after{
-    -webkit-box-sizing:padding-box;
-    box-sizing:padding-box;
-  }
-  
- 
-  
-  .tickerwrapper {
-    /* the outer div */
-    
-   /* position: relative;
-    top: 30px;*/
-    left:0%;
-    border: none;
-    background: #000;
-    width: 99.9%;
-    height: 3rem;
-    overflow: hidden;
-    cursor: pointer;
-  }
-  
-  ul.list {
-    position: relative;
-    display: inline-block;
-    list-style: none;
-    padding:0;
-    margin:0;
-  }
-  
-  ul.list.cloned {
-    position: relative;
-    display: inline-block;
-    list-style: none;
-    padding:0;
-    margin:0;
-  }
-  
-  ul.list li {
-    float: left;
-    padding-left: 30px;
-    font-size: 16px;
-    line-height: 16px;
-    color: #fff;
-    margin-top:15px;
-  }
-  
-  .tickerlogo{
-    width:30px;
-    margin-right:5px;
-  }
+ #ticker{
+
+/* background-color: aquamarine; */
+height: 3rem;
+z-index: 1;
+}
