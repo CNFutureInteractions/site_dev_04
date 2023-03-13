@@ -44,13 +44,16 @@ img {
 
 .dotted-border {
     border-style: dotted;
-    border-color: white;
+    border-color: rgb(102, 102, 102);
 }
 
 .intro-container {
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
+    width: auto;
+    height: calc(100vW/3);
+    display: flex;
     border-width: 1px 0px 1px 0px;
 }
 
@@ -65,12 +68,6 @@ img {
     position: absolute;
     top: 1vw;
     left: 3vw;
-}
-
-.ticker {
-    position: relative;
-    height: 3rem;
-    overflow: hidden;
 }
 
 .what-we-do-container {
@@ -112,7 +109,7 @@ img {
 .process-container {
     box-sizing: border-box;
     position: relative;
-    height: 30vw;
+    height: 50vw;
     overflow: hidden;
     float: left;
     display: flex;
@@ -130,7 +127,6 @@ img {
     box-sizing: border-box;
     float: left;
     width: 24vw;
-
     border-width: 0px 1px 0px 1px;
 }
 
@@ -138,10 +134,10 @@ img {
     font-family: 'DM Sans';
     font-size: calc(100vw/23);
     /* font-size: 3rem; */
-    line-height: calc(100vw/26);
+    line-height: calc(100vw/23);
     letter-spacing: -0.07rem;
     color: white;
-    max-width: 53%;
+    max-width: 75%;
     color: rgb(255, 255, 255);
     position: absolute;
     top: 1vw;
@@ -163,7 +159,7 @@ img {
 
 .stage-number {
     position: relative;
-    top: 35%;
+    top: 62%;
     left: 0.75rem;
     border-radius: 50%;
     width: calc(100vw/55);
@@ -180,13 +176,13 @@ img {
 .stage-description {
     position: relative;
     /* float: bottom;     */
-    top: 40%;
+    top: 65%;
     left: 1.2vw;
     padding-right: 2vw;
-    line-height: calc(100vw/65);
-    color: #ffffff;
     font-family: 'DM Mono';
+    color: #ffffff;
     font-size: calc(100vw/75);
+    line-height: calc(100vw/55);
 }
 
 .get-in-touch-container {
@@ -228,7 +224,7 @@ img {
     line-height: calc(100vw/50);
 }
 
-.footer{
+.footer {
     position: relative;
     top: 1vw;
     left: 1vw;
@@ -237,3 +233,59 @@ img {
     font-size: 1rem;
     line-height: 1.2rem;
 }
+
+/* ticker css */
+
+
+ 
+  
+  *, *::before, *::after{
+    -webkit-box-sizing:padding-box;
+    box-sizing:padding-box;
+  }
+  
+ 
+  
+  .tickerwrapper {
+    /* the outer div */
+    
+   /* position: relative;
+    top: 30px;*/
+    left:0%;
+    border: none;
+    background: #000;
+    width: 99.9%;
+    height: 3rem;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  ul.list {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    padding:0;
+    margin:0;
+  }
+  
+  ul.list.cloned {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    padding:0;
+    margin:0;
+  }
+  
+  ul.list li {
+    float: left;
+    padding-left: 30px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+    margin-top:15px;
+  }
+  
+  .tickerlogo{
+    width:30px;
+    margin-right:5px;
+  }
