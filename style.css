@@ -113,7 +113,6 @@ img {
     box-sizing: border-box;
     position: relative;
     height: 30vw;
-    border-width: 0px 0px 1px 0px;
     overflow: hidden;
     float: left;
     display: flex;
@@ -183,9 +182,58 @@ img {
     /* float: bottom;     */
     top: 40%;
     left: 1.2vw;
-    padding-right: 2    vw;
+    padding-right: 2vw;
     line-height: calc(100vw/65);
     color: #ffffff;
     font-family: 'DM Mono';
     font-size: calc(100vw/75);
+}
+
+.get-in-touch-container {
+    box-sizing: border-box;
+    position: relative;
+    /* height: 100%; */
+    overflow: hidden;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    border-width: 1px 0px 1px 0px;
+}
+
+.g-i-t-img {
+    box-sizing: border-box;
+    float: left;
+    width: 48vw;
+    border-width: 0px 1px 0px 0px;
+}
+
+.g-i-t-text {
+    box-sizing: border-box;
+    float: left;
+    width: 48vw;
+    color: rgb(255, 255, 255);
+    font-family: 'DM Sans';
+    font-size: calc(100vw/55);
+    line-height: calc(100vw/50);
+    padding: 2vw;
+    padding-right: 10vw;
+    /* background-color: rgb(69, 1, 255); */
+    border-width: 0px 1px 0px 1px;
+}
+
+.g-i-t-text a {
+    color: rgb(255, 255, 255);
+    font-family: 'DM Sans';
+    font-size: calc(100vw/55);
+    line-height: calc(100vw/50);
+}
+
+.footer{
+    position: relative;
+    top: 1vw;
+    left: 1vw;
+    color: rgb(102, 102, 102);
+    font-family: 'DM Sans';
+    font-size: 1rem;
+    line-height: 1.2rem;
 }
