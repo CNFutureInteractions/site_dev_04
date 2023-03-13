@@ -21,9 +21,8 @@ img {
     box-sizing: border-box;
     position: relative;
     padding: 1rem 0rem 1rem 0rem;
-  
-}
 
+}
 
 
 .header-title {
@@ -43,28 +42,21 @@ img {
 
 }
 
-.intro-container {
-    box-sizing: border-box;
-
-    position: relative;
-    /* width: 100vw; */
-    border: rgb(255, 255, 255);
-    border-style: dotted;
-    border-width: 1px;
-    overflow: hidden;
-    border-left: 0px;
-    border-top: 1px;
-    border-right: 0px;
-    border-bottom:1px;
+.dotted-border {
     border-style: dotted;
     border-color: white;
+}
 
+.intro-container {
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    border-width: 1px 0px 1px 0px;
 }
 
 .intro-text {
     font-family: 'DM Sans';
     font-size: calc(100vw/23);
-    /* font-size: 3rem; */
     line-height: calc(100vw/23);
     letter-spacing: -0.08rem;
     color: white;
@@ -73,11 +65,9 @@ img {
     position: absolute;
     top: 1vw;
     left: 3vw;
-
 }
 
 .ticker {
-
     position: relative;
     height: 3rem;
     overflow: hidden;
@@ -87,17 +77,11 @@ img {
     box-sizing: border-box;
     position: relative;
     /* height: 100%; */
-    border: rgb(255, 255, 255);
     overflow: hidden;
     float: left;
     display: flex;
     flex-direction: row;
-    border-left: 0px;
-    border-top: 1px;
-    border-right: 0px;
-    border-bottom: 1px;
-    border-style: dotted;
-    border-color: white;
+    border-width: 1px 0px 1px 0px;
 }
 
 .vert-spacer {
@@ -109,44 +93,27 @@ img {
     box-sizing: border-box;
     float: left;
     width: 48vw;
-    border-left: 1px;
-    border-top: 0px;
-    border-right: 0px;
-    border-bottom: 0px;
-    border-style: dotted;
-    border-color: white;
-    
+    border-width: 0px 0px 0px 1px;
 }
 
 .wwd-text {
     box-sizing: border-box;
     float: left;
     width: 48vw;
+    color: rgb(255, 255, 255);
     font-family: 'DM Sans';
     font-size: calc(100vw/55);
     line-height: calc(100vw/50);
     padding: 2vw;
     /* background-color: rgb(69, 1, 255); */
-    color: rgb(255, 255, 255);
-    border-left: 1px;
-    border-top: 0px;
-    border-right: 1px;
-    border-bottom: 0px;
-    border-style: dotted;
-    border-color: white;
-    
+    border-width: 0px 1px 0px 1px;
 }
 
 .process-container {
     box-sizing: border-box;
     position: relative;
     height: 30vw;
-    border-left: 0px;
-    border-top: 0px;
-    border-right: 0px;
-    border-bottom: 1px;
-    border-style: dotted;
-    border-color: white;
+    border-width: 0px 0px 1px 0px;
     overflow: hidden;
     float: left;
     display: flex;
@@ -157,30 +124,15 @@ img {
     box-sizing: border-box;
     float: left;
     width: 24vw;
-    font-family: 'DM Mono';
-    font-size: calc(100vw/100);
-    line-height: calc(100vw/10);
-    border-left: 1px;
-    border-top: 0px;
-    border-right: 0px;
-    border-bottom: 0px;
-    border-style: dotted;
-    border-color: white;
+    border-width: 0px 0px 0px 1px;
 }
 
 .stages-end {
     box-sizing: border-box;
     float: left;
     width: 24vw;
-    font-family: 'DM Mono';
-    font-size: calc(100vw/100);
-    line-height: calc(100vw/10);
-    border-left: 1px;
-    border-top: 0px;
-    border-right: 1px;
-    border-bottom: 0px;
-    border-style: dotted;
-    border-color: white;
+
+    border-width: 0px 1px 0px 1px;
 }
 
 .stages-text {
@@ -195,4 +147,45 @@ img {
     position: absolute;
     top: 1vw;
     left: 3vw;
+}
+
+.stage-container {
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* height: 30vw; */
+    /* border-width: 0px 1px 1px 0px; */
+    overflow: hidden;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.stage-number {
+    position: relative;
+    top: 35%;
+    left: 0.75rem;
+    border-radius: 50%;
+    width: calc(100vw/55);
+    height: calc(100vw/55);
+    line-height: calc(100vw/55);
+    padding: 10px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'DM Sans';
+    font-size: calc(100vw/55);
+}
+
+.stage-description {
+    position: relative;
+    /* float: bottom;     */
+    top: 40%;
+    left: 1.2vw;
+    padding-right: 2    vw;
+    line-height: calc(100vw/65);
+    color: #ffffff;
+    font-family: 'DM Mono';
+    font-size: calc(100vw/75);
 }
